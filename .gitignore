@@ -1,0 +1,31 @@
+# .gitignore — lista de archivos que Git debe IGNORAR (nunca se suben a GitHub).
+# Regla de oro del proyecto: los secretos y lo que se puede regenerar no se versionan.
+
+# --- Secretos -----------------------------------------------------------------
+# El .env guarda las claves reales (FIRMS, AEMET, Telegram, LLM...). JAMÁS se sube.
+# La plantilla sin valores (.env.example) sí se sube, por eso la excluimos de la regla.
+.env
+.env.*
+!.env.example
+
+# --- Entorno de Python (lo regenera `uv sync` en cualquier máquina) ------------
+.venv/
+__pycache__/
+*.pyc
+
+# --- Cachés de herramientas de calidad (se regeneran solas) --------------------
+.pytest_cache/
+.ruff_cache/
+
+# --- Databricks ----------------------------------------------------------------
+# Carpeta que crean los Asset Bundles con el estado de cada despliegue (Fase 4).
+.databricks/
+
+# --- Datos descargados en local -----------------------------------------------
+# Los datos viven en Databricks, no en Git. Si descargamos algo para probar, va aquí.
+data/
+
+# --- Basura del sistema y del editor -------------------------------------------
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
