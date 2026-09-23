@@ -1,0 +1,13 @@
+# pyproject.toml — la "ficha técnica" del proyecto Python.
+# Dice cómo se llama, qué versión de Python necesita y qué librerías usa.
+# uv lee este archivo para montar el entorno; nunca instalamos nada "a mano" con pip.
+
+[project]
+name = "monitor-riesgos-renovables"
+version = "0.1.0"
+description = "Monitor de incendios, rayos y avisos meteorológicos sobre parques renovables de la Península Ibérica."
+# Mínimo 3.12 porque es la versión del compute serverless de Databricks:
+# así lo que funciona en el Mac funciona igual allí. La versión exacta está en .python-version.
+requires-python = ">=3.12"
+# Vacío a propósito: iremos añadiendo librerías con `uv add` solo cuando las necesitemos.
+dependencies = []
