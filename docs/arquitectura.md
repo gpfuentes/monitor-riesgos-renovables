@@ -128,7 +128,7 @@ Los nombres de las tablas previstas son provisionales. Rayos y avisos se incorpo
 
 | Fase | Alcance | Estado |
 |---|---|---|
-| 0 | Entorno, Unity Catalog, volumen de landing, prueba de subida | ✅ Prueba completada |
+| 0 | Entorno, Unity Catalog, volumen de landing, prueba de subida | ✅ Completada |
 | 1 | Incendios de extremo a extremo (FIRMS + OSM → gold), ejecución programada | Pendiente |
 | 2 | Rayos (MTG), avisos (AEMET), cobertura peninsular, filtro de falsos positivos | Pendiente |
 | 3 | Alertas en Telegram, informe con LLM y evals | Pendiente |
